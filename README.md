@@ -72,7 +72,7 @@ The assistant can combine structured information lookup with semantic retrieval 
 
 **Conceptual workflow:**
 
-`User Query → Query Processing → Information Retrieval → Response Generation`
+`User Query -> Query Processing -> Information Retrieval -> Response Generation`
 
 Where implemented, **Retrieval-Augmented Generation (RAG)** can connect a language model with relevant institutional information to support context-aware answers.
 
