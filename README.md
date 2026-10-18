@@ -1,65 +1,129 @@
-# 🏛️ MyZone – SFRC 360 & Pragya AI Digital Campus Platform
+# 🏛️ MyZone – SFRC360
+### AI-Enabled Digital Campus Platform
+**One Platform. Every Campus Service. Powered by AI.**
 
-> **The Standard Fireworks Rajaratnam College for Women (Autonomous), Sivakasi**  
-> *Affiliated to Madurai Kamaraj University | Re-accredited with 'A+' Grade by NAAC | College with Potential for Excellence by UGC | Mentor Institution under UGC PARAMARSH*
+> Developed for The Standard Fireworks Rajaratnam College for Women (Autonomous), Sivakasi  
+> Affiliated with Madurai Kamaraj University
+
+MyZone – SFRC360 is a digital campus management platform designed to bring academic services, institutional information, and campus resources together in one unified environment.
+
+The platform features role-based portals for students, faculty, parents, and administrators, alongside **Pragya AI**, a conversational campus assistant designed to simplify access to college-related information.
+
+By combining campus management with AI-assisted information access, MyZone aims to make institutional services more accessible, organized, and efficient.
 
 ---
 
-## 🌟 Overview
+## ✨ Key Features
 
-**MyZone SFRC 360** is a comprehensive, production-grade Smart Digital Campus SaaS platform built for **The Standard Fireworks Rajaratnam College for Women**. The system unifies academic governance, student self-service, faculty marks & attendance management, parent progress monitoring, administrative oversight, and **Pragya AI** — a live RAG-powered digital campus assistant.
+### 🎓 1. Student Portal
+A centralized space for students to access academic information and campus services.
 
----
+- Attendance and examination details.
+- Internal assessment marks and academic performance.
+- Timetables, course materials, and learning resources.
+- Placement information and student activities.
+- Campus facilities and transportation details.
+- Institutional announcements and notifications.
 
-## 🚀 Key Modules & Capabilities
+### 👩‍🏫 2. Faculty Portal
+Tools to support academic activities and faculty-related information management.
 
-### 1. 🎓 Student Self-Service Portal (`/student`)
-- **Live Attendance Tracking**: Color-coded attendance percentages with minimum 75% examination eligibility alerts and duty leave logs.
-- **Academic Timetable & Schedule**: Daily periods, room allocation, faculty course mapping, and lab schedules.
-- **Continuous Internal Assessment (CIA) & Marks**: Real-time internal assessment marks, semester GPA, and cumulative CGPA tracking.
-- **Campus Care (CivicFix)**: Multi-turn AI grievance reporting with automatic SLA countdown timers, category tagging, and status tracking.
-- **E-Learning & E-Content Repository**: Unit-wise lecture notes, PDFs, syllabus downloads, and embedded multimedia lectures.
-- **Placement, Alumni & IEDC**: Campus placement drives, interview preparation, alumni mentorship, and entrepreneurship cell events.
-- **Transport & Facilities**: Interactive route directory, stop timings, driver contacts, and campus facility locator.
+- Student attendance management.
+- Internal assessment and marks entry.
+- Academic resources and learning material management.
+- Student mentorship information.
+- Research and publication-related information.
 
-### 2. 👩🏻‍🏫 Faculty Portal (`/faculty`)
-- **Real-Time Attendance Marking**: Session-by-session student attendance recording with automatic absentee alerts.
-- **Marks Entry & CIA Submission**: Component-wise marks entry (CIA-1, CIA-2, Assignments, Model Exams) with auto-calculation.
-- **Mentorship & Ward Management**: Student mentorship sessions recording, confidential mentoring notes, and mentee progress tracking.
-- **E-Content Authoring**: Uploading and organizing study materials, past exam papers, and question banks.
-- **Research & Publications**: Tracking publications, h-index, funded research projects, and conferences.
+### 👨‍👩‍👧 3. Parent Portal
+A dedicated interface for parents to stay informed about academic progress.
 
-### 3. 👨‍👩‍👧 Parent Portal (`/parent`)
-- **Ward Progress Tracking**: Granular academic performance, semester results, and subject-wise grades.
-- **Attendance Monitoring**: Live alerts for low attendance or unexcused absences.
-- **Hostel Guidelines & Outing Verification**: Digital leave requests, warden approvals, and curfew management.
-- **College Notices & Events**: Circulars, exam schedules, fee reminders, and event notifications.
+- Attendance monitoring.
+- Academic performance and examination information.
+- College announcements and event updates.
+- Relevant student-related notifications.
 
-### 4. 🛡️ Administrative & Governance Portal (`/admin`)
-- **Institutional Analytics**: Real-time KPI summary cards, student strength, faculty-to-student ratios, and department metrics.
-- **User Management & RBAC**: Granular role-based access control with capability-aware permissions across all 4 roles.
-- **IQAC & Accreditation**: NAAC, NIRF, and autonomous compliance metrics, SSR data points, and academic audit reports.
-- **RAG Knowledge Base & Ingestion**: Managing institutional document ingestion, pgvector embeddings, and chunk indexing.
-- **Audit Logs**: Immutable activity logging for security, compliance, and dispute resolution.
+### 🛡️ 4. Administrative Portal
+A centralized interface for managing institutional information and campus operations.
 
-### 5. 🤖 Pragya AI Campus Digital Assistant
-- **Exact Mascot & Blinking Animation**: Floating assistant with responsive dialog and interactive mascot animations.
-- **Dual-Layer Knowledge Resolver**: Instant deterministic fuzzy matching for department directories, faculty info, fees, transport, and research guides + semantic pgvector RAG fallback.
-- **Interactive Quick Action Chips**: Suggested next-step prompts and deep-linking into campus modules.
+- User and department management.
+- Academic and institutional data management.
+- Campus services, events, and notifications.
+- Role-based access management.
+- Administrative monitoring and audit records.
+
+### 🤖 5. Pragya AI — Campus Digital Assistant
+
+**Pragya AI is the conversational intelligence component of MyZone.**
+
+It is designed to help users find college-related information through natural-language queries.
+
+Key areas of assistance include:
+
+- Admissions and academic departments.
+- Faculty information.
+- Fee-related queries.
+- Transportation information.
+- Ph.D. guidance.
+- Institutional contact details.
+
+#### AI Architecture
+
+The assistant can combine structured information lookup with semantic retrieval to provide relevant responses.
+
+**Conceptual workflow:**
+
+`User Query → Query Processing → Information Retrieval → Response Generation`
+
+Where implemented, **Retrieval-Augmented Generation (RAG)** can connect a language model with relevant institutional information to support context-aware answers.
+
+### 🏫 6. Campus Services
+- College events and student activities.
+- Campus facilities and resources.
+- Transportation information.
+- Institutional announcements and updates.
+
+### 🔐 7. Security and Access Control
+- User authentication.
+- Role-based authorization.
+- Role-specific access restrictions.
+- Controlled access to institutional information.
+- Audit logging and data integrity support.
 
 ---
 
 ## 🛠️ Technology Stack
 
-| Layer | Technologies |
-| :--- | :--- |
-| **Frontend Web App** | Next.js 16 (Turbopack, App Router), React 19, TypeScript, Tailwind CSS, Lucide Icons |
-| **Backend Services** | FastAPI, Python 3.12, Uvicorn, SQLAlchemy, Pydantic v2 |
-| **Database & Vector Store** | PostgreSQL, Supabase, pgvector (Semantic Embeddings), Row-Level Security (RLS) |
-| **AI & RAG Engine** | OpenAI / Gemini API, pgvector, LangChain / Custom chunking & ingestion pipeline |
-| **Testing & Verification** | Playwright E2E testing, Pytest, Lighthouse Performance & Accessibility Audits |
+The following technologies represent the project's intended or reported stack. Retain each item only if it is present in, or actively used by, the codebase.
+
+| Layer | Technology |
+|---|---|
+| Frontend | Next.js, React, TypeScript |
+| UI Styling | Tailwind CSS, Lucide Icons |
+| Backend | Python, FastAPI |
+| Database | PostgreSQL, Supabase |
+| Authentication | Supabase Auth |
+| Vector Search | pgvector |
+| AI Integration | LLM APIs, Retrieval-Augmented Generation (RAG) |
+| Testing | Pytest, Playwright |
+| Development Tools | Git, GitHub |
 
 ---
+
+## 🏗️ System Architecture
+
+MyZone follows a modular architecture that separates the user interface, backend services, institutional data, and AI-assisted information retrieval.
+
+### Application Workflow
+
+```text
+User
+  ↓
+Role-Based Portal
+  ↓
+Backend API
+  ↓
+Database and Campus Services
+
 
 ## 📁 Repository Structure
 
