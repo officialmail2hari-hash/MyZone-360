@@ -113,6 +113,7 @@ The following technologies represent the project's intended or reported stack. R
 
 MyZone follows a modular architecture that separates the user interface, backend services, institutional data, and AI-assisted information retrieval.
 
+
 ### Application Workflow
 
 ```text
@@ -124,6 +125,7 @@ Backend API
   ↓
 Database and Campus Services
 
+```
 
 ## 📁 Repository Structure
 
