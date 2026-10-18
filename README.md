@@ -1,94 +1,114 @@
-**MyZone – SFRC360**
-  One Platform. Every Campus Service. 
+# 🏛️ MyZone – SFRC 360 & Pragya AI Digital Campus Platform
 
-MyZone – SFRC360 is an AI-enabled campus management platform designed to bring academic services, campus resources, and institutional information into one unified digital environment.
-
-At its core is **Pragya AI**, an intelligent conversational assistant designed to help users access college-related information through natural-language interactions. Combined with role-based dashboards and centralized campus services, MyZone aims to make campus information more accessible, organized, and easier to navigate.
+> **The Standard Fireworks Rajaratnam College for Women (Autonomous), Sivakasi**  
+> *Affiliated to Madurai Kamaraj University | Re-accredited with 'A+' Grade by NAAC | College with Potential for Excellence by UGC | Mentor Institution under UGC PARAMARSH*
 
 ---
 
-Core Features
--------------
+## 🌟 Overview
 
-**Pragya AI** — Intelligent Campus Assistant
-  Pragya AI is the conversational intelligence component of MyZone, designed to simplify access to institutional information.
-
-- Natural-language interaction for campus-related queries.
-- Information assistance for admissions, departments, fees, and faculty.
-- Access to transportation details and institutional contact information.
-- Support for Ph.D. guidance-related queries.
-- Designed for integration with **Large Language Models (LLMs)** and **Retrieval-Augmented Generation (RAG)** for context-aware responses.
-
-**Role-Based Campus Dashboards**
-  A unified interface with features tailored to different campus stakeholders.
-
-- Student: Attendance, marks, examinations, fees, and campus updates.
-- Faculty: Academic information and faculty-related services.
-- Parent: Attendance, academic performance, and institutional updates.
-- Administrator: User management, departments, campus information, events, and notifications.
-
-**Connected Campus Services**
-  - Campus events and student activities.
-  - Campus facilities and transportation information.
-  - Institutional announcements and notifications.
-  - Centralized access to essential campus resources.
-
-**Security and Access Management**
-  - User authentication and role-based authorization.
-  - Role-specific access restrictions.
-  - Controlled access to institutional information.
-  - Support for data integrity and operational auditability.
+**MyZone SFRC 360** is a comprehensive, production-grade Smart Digital Campus SaaS platform built for **The Standard Fireworks Rajaratnam College for Women**. The system unifies academic governance, student self-service, faculty marks & attendance management, parent progress monitoring, administrative oversight, and **Pragya AI** — a live RAG-powered digital campus assistant.
 
 ---
 
-**AI and System Design**
+## 🚀 Key Modules & Capabilities
 
-  MyZone is designed around a modular architecture that connects the application interface, backend services, institutional data, and AI-assisted information retrieval.
+### 1. 🎓 Student Self-Service Portal (`/student`)
+- **Live Attendance Tracking**: Color-coded attendance percentages with minimum 75% examination eligibility alerts and duty leave logs.
+- **Academic Timetable & Schedule**: Daily periods, room allocation, faculty course mapping, and lab schedules.
+- **Continuous Internal Assessment (CIA) & Marks**: Real-time internal assessment marks, semester GPA, and cumulative CGPA tracking.
+- **Campus Care (CivicFix)**: Multi-turn AI grievance reporting with automatic SLA countdown timers, category tagging, and status tracking.
+- **E-Learning & E-Content Repository**: Unit-wise lecture notes, PDFs, syllabus downloads, and embedded multimedia lectures.
+- **Placement, Alumni & IEDC**: Campus placement drives, interview preparation, alumni mentorship, and entrepreneurship cell events.
+- **Transport & Facilities**: Interactive route directory, stop timings, driver contacts, and campus facility locator.
 
-  Pragya AI — Conceptual Workflow
-    `User Query -> Query Processing -> Information Retrieval -> Context-Aware Response`
+### 2. 👩🏻‍🏫 Faculty Portal (`/faculty`)
+- **Real-Time Attendance Marking**: Session-by-session student attendance recording with automatic absentee alerts.
+- **Marks Entry & CIA Submission**: Component-wise marks entry (CIA-1, CIA-2, Assignments, Model Exams) with auto-calculation.
+- **Mentorship & Ward Management**: Student mentorship sessions recording, confidential mentoring notes, and mentee progress tracking.
+- **E-Content Authoring**: Uploading and organizing study materials, past exam papers, and question banks.
+- **Research & Publications**: Tracking publications, h-index, funded research projects, and conferences.
 
-  Application — High-Level Workflow
-    `User -> Role-Based Dashboard -> Backend API -> Database / Campus Services`
+### 3. 👨‍👩‍👧 Parent Portal (`/parent`)
+- **Ward Progress Tracking**: Granular academic performance, semester results, and subject-wise grades.
+- **Attendance Monitoring**: Live alerts for low attendance or unexcused absences.
+- **Hostel Guidelines & Outing Verification**: Digital leave requests, warden approvals, and curfew management.
+- **College Notices & Events**: Circulars, exam schedules, fee reminders, and event notifications.
 
-The AI workflow is conceptual; its exact implementation depends on the components currently integrated into the project.
+### 4. 🛡️ Administrative & Governance Portal (`/admin`)
+- **Institutional Analytics**: Real-time KPI summary cards, student strength, faculty-to-student ratios, and department metrics.
+- **User Management & RBAC**: Granular role-based access control with capability-aware permissions across all 4 roles.
+- **IQAC & Accreditation**: NAAC, NIRF, and autonomous compliance metrics, SSR data points, and academic audit reports.
+- **RAG Knowledge Base & Ingestion**: Managing institutional document ingestion, pgvector embeddings, and chunk indexing.
+- **Audit Logs**: Immutable activity logging for security, compliance, and dispute resolution.
 
----
-
-Technology Stack
-
-  | Layer            | Technologies 
-  |------------------|--------------
-  | Frontend         | Flutter, Dart 
-  | Backend          | Python, FastAPI 
-  | Database         | PostgreSQL, Supabase 
-  | Authentication   | Supabase Auth 
-  | AI Integration   | LLMs, Retrieval-Augmented Generation (RAG) 
-  | Maps & Location  | Maps API 
-  | Notifications    | Firebase Cloud Messaging 
-  | Version Control  | Git, GitHub 
-
-
----
-
-Vision
-
-  To create a smarter, more connected campus experience by combining centralized institutional services with AI-assisted information access.
-
-  MyZone aims to reduce the effort required to find campus information, while Pragya AI provides a conversational way to explore that information.
-
----
-
-Project Information
-
-  - Project: MyZone – SFRC360
-  - Category: AI-Enabled Campus Management System
-  - Domain: Education Technology | Artificial Intelligence
+### 5. 🤖 Pragya AI Campus Digital Assistant
+- **Exact Mascot & Blinking Animation**: Floating assistant with responsive dialog and interactive mascot animations.
+- **Dual-Layer Knowledge Resolver**: Instant deterministic fuzzy matching for department directories, faculty info, fees, transport, and research guides + semantic pgvector RAG fallback.
+- **Interactive Quick Action Chips**: Suggested next-step prompts and deep-linking into campus modules.
 
 ---
 
- Developer
+## 🛠️ Technology Stack
 
-**Harishma M**
-B.Sc. Data Science  
-The Standard Fireworks Rajaratnam College for Women, Sivakasi
+| Layer | Technologies |
+| :--- | :--- |
+| **Frontend Web App** | Next.js 16 (Turbopack, App Router), React 19, TypeScript, Tailwind CSS, Lucide Icons |
+| **Backend Services** | FastAPI, Python 3.12, Uvicorn, SQLAlchemy, Pydantic v2 |
+| **Database & Vector Store** | PostgreSQL, Supabase, pgvector (Semantic Embeddings), Row-Level Security (RLS) |
+| **AI & RAG Engine** | OpenAI / Gemini API, pgvector, LangChain / Custom chunking & ingestion pipeline |
+| **Testing & Verification** | Playwright E2E testing, Pytest, Lighthouse Performance & Accessibility Audits |
+
+---
+
+## 📁 Repository Structure
+
+```
+SFRC-Student-Portal/
+├── myzone-sfrc360/             # Next.js 16 Production Frontend Application
+│   ├── app/                    # App Router (Student, Faculty, Parent, Admin portals)
+│   ├── components/             # Reusable UI components, layout shell & Pragya AI Drawer
+│   ├── lib/                    # Supabase client, API clients, authentication & hooks
+│   └── public/                 # Static assets, branding logos, mascot animations & manifest
+├── backend/                    # FastAPI High-Performance Backend Application
+│   ├── app/
+│   │   ├── ai/                 # Pragya AI Service, multi-turn resolver & providers
+│   │   ├── api/                # REST API routers & endpoints (v1)
+│   │   ├── core/               # Database engine, JWT authentication & audit logging
+│   │   ├── models/             # SQLAlchemy ORM models & database schemas
+│   │   ├── rag/                # Document chunking, embedding generation & retrieval
+│   │   └── tests/              # Automated backend test suites
+│   └── requirements.txt        # Python backend dependencies
+├── SFRC_Assist/                # Standalone Institutional Assistant & Reference SQLite DB
+├── Images/                     # College emblems, crests, and identity graphics
+├── .gitignore                  # Git ignore rules for clean repository state
+└── README.md                   # Project documentation
+```
+
+---
+
+## 🚀 Getting Started Locally
+
+### 1. Frontend Setup (`myzone-sfrc360`)
+```bash
+cd myzone-sfrc360
+npm install
+npm run dev
+```
+*Frontend runs at `http://localhost:3000`*
+
+### 2. Backend Setup (`backend`)
+```bash
+cd backend
+python -m venv venv
+venv\Scripts\activate          # On Windows
+pip install -r requirements.txt
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+```
+*Backend API runs at `http://localhost:8000` with Swagger docs at `http://localhost:8000/docs`*
+
+---
+
+## 📄 License & Credits
+Developed for **The Standard Fireworks Rajaratnam College for Women, Sivakasi**.  
+All rights reserved © 2026.
